@@ -2,9 +2,9 @@
 
 ## Directory Introduction
 
-The library directory contains library files for various sensors that can be used with boards running Micropython firmware. You need to manually upload these library files to the board. Our customized firmware will automatically include these library files for ease of use.
+The **library** directory contains library files for various sensors that can be used with boards running Micropython firmware. You need to manually upload these library files to the board. Our customized firmware will automatically include these library files for ease of use.
 
-The main.py under each directory in the examples directory are reference code samples for using the libraries under library. They can be directly uploaded to the board and run.
+The **main.py** under each directory in the **examples** directory are reference code samples for using the libraries under library. They can be directly uploaded to the board and run.
 
 ## Quick Start
 
@@ -12,11 +12,11 @@ First you need an ESP32 board running Micropython firmware. You can refer to the
 
 After flashing, open any serial tool on your computer, select the USB port corresponding to your board, and set the baud rate to 115200. When you restart the board, you should see the serial tool printing Micropython version info normally, indicating successful flashing and running, like below:
 
-  ```text
-  MicroPython v1.21.0-3 on 2023-11-22; Generic ESP32 module with ESP32
-  Type "help()" for more information.
-  >>>
-  ```
+```text
+MicroPython v1.21.0-3 on 2023-11-22; Generic ESP32 module with ESP32
+Type "help()" for more information.
+>>>
+```
 
 ## Upload Files
 
@@ -28,17 +28,17 @@ There are many command line and GUI tools for uploading files to Micropython. If
 ampy -p COM1 ls
 ```
 
-It should list /boot.py etc if working properly.
+It should list **/boot.py** etc if working properly.
 
 ## Run Examples and Libraries
 
-Let's take a passive buzzer as an example. The corresponding library is library/buzzer.py. First upload the library file to the board:
+Let's take a passive buzzer as an example. The corresponding library is **library/buzzer.py**. First upload the library file to the board:
 
 ```shell
 ampy -p COM1 put library/buzzer.py
 ```
 
-Then upload a buzzer example file as the main program, e.g. examples/buzzer/play_a_melody/main.py:
+Then upload a buzzer example file as the main program, e.g. **examples/buzzer/play_a_melody/main.py**:
 
 ```shell
 ampy -p COM1 put examples/buzzer/play_a_melody/main.py

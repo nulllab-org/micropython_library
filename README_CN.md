@@ -32,16 +32,16 @@ ampy -p COM1 ls
 
 ## 调试示例与库
 
-这里以无源蜂鸣器为例，对应的库为**library\buzzer.py**, 先将库文件上传到板子中:
+这里以无源蜂鸣器为例，对应的库为**library/buzzer.py**, 先将库文件上传到板子中:
 
 ```shell
-ampy -p COM1 put library\buzzer.py
+ampy -p COM1 put library/buzzer.py
 ```
 
-再上传一个buzzer示例文件作为主程序：例如**examples\buzzer\play_a_melody\main.py**:
+再上传一个buzzer示例文件作为主程序：例如**examples/buzzer/play_a_melody/main.py**:
 
 ```shell
-ampy -p COM1 put examples\buzzer\play_a_melody\main.py
+ampy -p COM1 put examples/buzzer/play_a_melody/main.py
 ```
 
 上传完成重启板子，会自动运行main.py，这样就成功运行了一个示例程序

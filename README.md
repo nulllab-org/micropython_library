@@ -8,7 +8,7 @@ The main.py under each directory in the examples directory are reference code sa
 
 ## Quick Start
 
-First you need an ESP32 board running Micropython firmware. You can refer to the official documentation for downloading and flashing: <https://micropython.org/download/ESP32_GENERIC/>. It is recommended to download the latest v1.21.0 stable version directly: v1.21.0 (2023-10-05) .bin
+First you need an ESP32 board running Micropython firmware. You can refer to the official documentation for downloading and flashing: <https://micropython.org/download/ESP32_GENERIC/>. It is recommended to download the latest v1.21.0 stable version directly: [**v1.21.0 (2023-10-05) .bin**](https://micropython.org/resources/firmware/ESP32_GENERIC-20231005-v1.21.0.bin)
 
 After flashing, open any serial tool on your computer, select the USB port corresponding to your board, and set the baud rate to 115200. When you restart the board, you should see the serial tool printing Micropython version info normally, indicating successful flashing and running, like below:
 
@@ -32,16 +32,16 @@ It should list /boot.py etc if working properly.
 
 ## Run Examples and Libraries
 
-Let's take a passive buzzer as an example. The corresponding library is library\buzzer.py. First upload the library file to the board:
+Let's take a passive buzzer as an example. The corresponding library is library/buzzer.py. First upload the library file to the board:
 
 ```shell
-ampy -p COM1 put library\buzzer.py
+ampy -p COM1 put library/buzzer.py
 ```
 
-Then upload a buzzer example file as the main program, e.g. examples\buzzer\play_a_melody\main.py:
+Then upload a buzzer example file as the main program, e.g. examples/buzzer/play_a_melody/main.py:
 
 ```shell
-ampy -p COM1 put examples\buzzer\play_a_melody\main.py
+ampy -p COM1 put examples/buzzer/play_a_melody/main.py
 ```
 
 After upload, restart the board and it will automatically run main.py, and you have successfully run an example program.

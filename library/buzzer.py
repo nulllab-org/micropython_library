@@ -22,9 +22,9 @@ class Buzzer:
             duration (int): The duration of the pitch in milliseconds.
         """
         if freq == 0:
-            self.pwm.duty_u16(0)
+            self.pwm.duty(0)
         else:
-            self.pwm.duty_u16(23768)
+            self.pwm.duty(512)
             self.pwm.freq(freq)
-        time.sleep(duration / 1000)
-        self.pwm.duty_u16(0)
+        time.sleep_ms(duration)
+        self.pwm.duty(0)

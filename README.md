@@ -1,10 +1,17 @@
 # Micropython Library
 
-## Directory Introduction
+## Introduction
 
 The **library** directory contains library files for various sensors that can be used with boards running Micropython firmware. You need to manually upload these library files to the board. Our customized firmware will automatically include these library files for ease of use.
 
 The **main.py** under each directory in the **examples** directory are reference code samples for using the libraries under library. They can be directly uploaded to the board and run.
+
+Below is a detailed list of libraries:
+
+| module name | library | examples |
+| ----------- | ------- | -------- |
+| Servo | [library/servo.py](library/servo.py) | [examples/servo/set_angle/main.py](examples/servo/set_angle/main.py) |
+| Passive buzzer | [library/buzzer.py](library/buzzer.py) | [examples/buzzer/play_a_melody/main.py](examples/buzzer/play_a_melody/main.py) |
 
 ## Quick Start
 
@@ -30,12 +37,7 @@ ampy -p COM1 ls
 
 It should list **/boot.py** etc if working properly.
 
-## Run Examples and Libraries
-
-| module name | library | examples |
-| ----------- | ------- | -------- |
-| Servo | [library/servo.py](library/servo.py) | [examples/servo/set_angle/main.py](examples/servo/set_angle/main.py) |
-| Passive buzzer | [library/buzzer.py](library/buzzer.py) | [examples/buzzer/play_a_melody/main.py](examples/buzzer/play_a_melody/main.py) |
+## Upload Libraries and Run Examples
 
 Let's take a passive buzzer as an example. The corresponding library is **library/buzzer.py**. First upload the library file to the board:
 

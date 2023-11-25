@@ -32,6 +32,11 @@ It should list **/boot.py** etc if working properly.
 
 ## Run Examples and Libraries
 
+| module name | library | examples |
+| ----------- | ------- | -------- |
+| Servo | [library/servo.py](library/servo.py) | [examples/servo/set_angle/main.py](examples/servo/set_angle/main.py) |
+| Passive buzzer | [library/buzzer.py](library/buzzer.py) | [examples/buzzer/play_a_melody/main.py](examples/buzzer/play_a_melody/main.py) |
+
 Let's take a passive buzzer as an example. The corresponding library is **library/buzzer.py**. First upload the library file to the board:
 
 ```shell

@@ -12,7 +12,8 @@ Below is a detailed list of libraries:
 | ----------- | ------- | -------- |
 | Servo | [library/servo.py](library/servo.py) | [examples/servo/set_angle/main.py](examples/servo/set_angle/main.py) |
 | Passive buzzer | [library/buzzer.py](library/buzzer.py) | [examples/buzzer/play_a_melody/main.py](examples/buzzer/play_a_melody/main.py) |
-| 8x8 Matrix Led | [library/matrix_led_8x8.py](library/matrix_led_8x8.py) | [examples/matrix_led_8x8/show/main.py](examples/matrix_led_8x8/show/main.py) |
+| 8x8 Matrix LED | [library/matrix_led_8x8.py](library/matrix_led_8x8.py) | [examples/matrix_led_8x8/show/main.py](examples/matrix_led_8x8/show/main.py) |
+| 4-digit 7-segment LED | [library/i2c_device.py](library/i2c_device.py)<br>[library/four_digit_led.py](library/four_digit_led.py)<br> | [examples/four_digit_led/show/main.py](examples/four_digit_led/show/main.py)|
 
 ## Quick Start
 

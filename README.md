@@ -15,7 +15,7 @@ Below is a detailed list of libraries:
 | 8x8 Matrix LED | [library/matrix_led_8x8.py](library/matrix_led_8x8.py) | [examples/matrix_led_8x8/show/main.py](examples/matrix_led_8x8/show/main.py) |
 | 4-digit 7-segment LED | [library/i2c_device.py](library/i2c_device.py)<br>[library/four_digit_led.py](library/four_digit_led.py)<br> | [examples/four_digit_led/show/main.py](examples/four_digit_led/show/main.py)|
 | dht11 | This **dht** library is already built into the official firmware <br> refer to <https://docs.micropython.org/en/latest/esp32/quickref.html#dht-driver> | [examples/dht11/main.py](examples/dht11/main.py) |
-| I2C LCD1602 | [library/lcd_i2c/lcd_i2c](library/lcd_i2c/lcd_i2c) <br> **Note: This library is a directory that contains multiple py files, so you need to upload the entire directory to board instead of uploading each file individually. For example, upload the library using the ampy command: `ampy -p COM1 put library/lcd_i2c/lcd_i2c`** <br> The library is from <https://github.com/brainelectronics/micropython-i2c-lcd> | [lcd_i2c/lcd_i2c/examples/main.py](lcd_i2c/lcd_i2c/examples/main.py) |
+| I2C LCD1602 | [library/lcd_i2c/lcd_i2c](library/lcd_i2c/lcd_i2c) <br> **Note: This library is a directory that contains multiple py files, so you need to upload the entire directory to board instead of uploading each file individually. For example, upload the library using the ampy command: `ampy -p COM1 put library/lcd_i2c/lcd_i2c`** <br> The library is from <https://github.com/brainelectronics/micropython-i2c-lcd> | [examples/i2c_lcd1602/main.py](examples/i2c_lcd1602/main.py) |
 
 ## Quick Start
 

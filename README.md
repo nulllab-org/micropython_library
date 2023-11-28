@@ -14,7 +14,8 @@ Below is a detailed list of libraries:
 | Passive buzzer | [library/buzzer.py](library/buzzer.py) | [examples/buzzer/play_a_melody/main.py](examples/buzzer/play_a_melody/main.py) |
 | 8x8 Matrix LED | [library/matrix_led_8x8.py](library/matrix_led_8x8.py) | [examples/matrix_led_8x8/show/main.py](examples/matrix_led_8x8/show/main.py) |
 | 4-digit 7-segment LED | [library/i2c_device.py](library/i2c_device.py)<br>[library/four_digit_led.py](library/four_digit_led.py)<br> | [examples/four_digit_led/show/main.py](examples/four_digit_led/show/main.py)|
-| dht11 | dht (Already built into the official firmware) <br> refer to <https://docs.micropython.org/en/latest/esp32/quickref.html#dht-driver> | [examples/dht11/main.py](examples/dht11/main.py) |
+| dht11 | This **dht** library is already built into the official firmware <br> refer to <https://docs.micropython.org/en/latest/esp32/quickref.html#dht-driver> | [examples/dht11/main.py](examples/dht11/main.py) |
+| I2C LCD1602 | [library/lcd_i2c/lcd_i2c](library/lcd_i2c/lcd_i2c) <br> **Note: This library is a directory that contains multiple py files, so you need to upload the entire directory to board instead of uploading each file individually. For example, upload the library using the ampy command: `ampy -p COM1 put library/lcd_i2c/lcd_i2c`** <br> The library is from <https://github.com/brainelectronics/micropython-i2c-lcd> | [lcd_i2c/lcd_i2c/examples/main.py](lcd_i2c/lcd_i2c/examples/main.py) |
 
 ## Quick Start
 
@@ -26,6 +27,14 @@ After flashing, open any serial tool on your computer, select the USB port corre
 MicroPython v1.21.0-3 on 2023-11-22; Generic ESP32 module with ESP32
 Type "help()" for more information.
 >>>
+```
+
+## Update submodules
+
+Update the submodules after you clone the repository. Update it with the following command:
+
+```shell
+git submodule update --init --recursive
 ```
 
 ## Upload Files
@@ -57,3 +66,9 @@ ampy -p COM1 put examples/buzzer/play_a_melody/main.py
 After upload, restart the board and it will automatically run main.py, and you have successfully run an example program.
 
 You can check the comments in each main.py under examples for documentation of the example programs.
+
+If the library is a directory, you need to upload the entire directory to the board. Let's take a **I2C LCD1602** as an example:
+
+```shell
+ampy -p COM1 put library/lcd_i2c/lcd_i2c
+```
